@@ -1,0 +1,11 @@
+#filter{
+  text-align: left;
+  background-color: white;
+  border: 1px solid #4da;
+  font-size: 11pt;
+  height: 35px;
+  letter-spacing: 0;
+  margin: 10px;
+  padding: 0 10px;
+  width: 200px;
+}
