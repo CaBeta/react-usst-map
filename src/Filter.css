@@ -1,4 +1,9 @@
 #filter{
+    max-width: 70%;
+    margin: auto;
+    text-align: left;
+}
+#filter select{
   text-align: left;
   background-color: white;
   border: 1px solid #4da;
