@@ -9,8 +9,8 @@
                 "lowLevel": "1-400_mobile.jpg"
             },
             "latlng": {
-                "lat": 40.713829,
-                "lng": -73.989667
+                "lat": 31.294352,
+                "lng": 121.557137
             },
             "type": "restaurant",
             "operating_hours": "早上6点到晚上6点，周六不开",
@@ -38,8 +38,8 @@
                 "lowLevel": "2-400_mobile.jpg"
             },
             "latlng": {
-                "lat": 40.683555,
-                "lng": -73.966393
+                "lat": 31.293524,
+                "lng": 121.555754
             },
             "type": "restaurant",
             "operating_hours": "早上6点到晚上6点，周日不开",
@@ -67,8 +67,8 @@
                 "lowLevel": "3-400_mobile.jpg"
             },
             "latlng": {
-                "lat": 40.747143,
-                "lng": -73.985414
+                "lat": 31.29631,
+                "lng": 121.557248
             },
             "type": "restaurant",
             "operating_hours":"早上6点到晚上6点，每天都开",
@@ -96,8 +96,8 @@
                 "lowLevel": "4-400_mobile.jpg"
             },
             "latlng": {
-                "lat": 40.722216,
-                "lng": -73.987501
+                "lat": 31.289071,
+                "lng": 121.556914
             },
             "type": "restaurant",
             "operating_hours": "早上6点到晚上6点，每天都开",
@@ -125,8 +125,8 @@
                 "lowLevel": "5-400_mobile.jpg"
             },
             "latlng": {
-                "lat": 40.705089,
-                "lng": -73.933585
+                "lat": 31.289921,
+                "lng": 121.553379
             },
             "type": "classroom",
             "operating_hours": "早上7点到晚上10点，每天都开",
@@ -154,8 +154,8 @@
                 "lowLevel": "6-400_mobile.jpg"
             },
             "latlng": {
-                "lat": 40.674925,
-                "lng": -74.016162
+                "lat": 31.291712,
+                "lng": 121.555678
             },
             "type": "classroom",
             "operating_hours": "早上7点到晚上10点，每天都开",
@@ -183,8 +183,8 @@
                 "lowLevel": "7-400_mobile.jpg"
             },
             "latlng": {
-                "lat": 40.727397,
-                "lng": -73.983645
+                "lat": 31.294711,
+                "lng": 121.555598
             },
             "type": "classroom",
             "operating_hours": "早上7点到晚上10点，每天都开",
@@ -212,8 +212,8 @@
                 "lowLevel": "8-400_mobile.jpg"
             },
             "latlng": {
-                "lat": 40.726584,
-                "lng": -74.002082
+                "lat": 31.286593,
+                "lng": 121.557382
             },
             "type": "classroom",
             "operating_hours": "早上7点到晚上10点，每天都开",

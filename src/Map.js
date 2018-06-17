@@ -1,34 +1,59 @@
 import React from 'react'
+import { Map, InfoWindow, Marker } from 'google-maps-react';
 import './Map.css';
 
-class Map extends React.Component {
-    state={
-        map:{
-            center: {
-                lat: 31.2926931712,
-                lng: 121.5559310935
-            },
-            zoom:16
-        },
-        library:{ lat: 31.295187, lng: 121.554338 }
+class MapContainer extends React.Component {
+    state = {
+        activeMarker: {},
+        selectedPlace: {},
+        showingInfoWindow: false
+    };
 
-    }
-    componentDidMount(){
-        var map = new window.google.maps.Map(
-            this.refs.map,
-            this.state.map
-        );
-        new window.google.maps.Marker({
-            position: this.state.library,
-            map: map,
-            title: 'USST library'
-        })
-    }
+    onMarkerClick = (props, marker) =>
+        this.setState({
+            activeMarker: marker,
+            selectedPlace: props,
+            showingInfoWindow: true
+        });
+
+    onInfoWindowClose = () =>
+        this.setState({
+            activeMarker: null,
+            showingInfoWindow: false
+        });
+
     render(){
         return(
-            <div ref="map" id="map"></div>
+            <Map
+                className="map"
+                google={this.props.google}
+                onClick={this.onMapClicked}
+                style={{ height: 400, position: 'relative', width: '100%' }}
+                initialCenter={{
+                    lat: 31.2926931712,
+                    lng: 121.5559310935
+                }}
+                zoom={15}>
+                {this.props.markers.map((marker)=>(
+                    <Marker
+                        name={marker.name}
+                        onClick={this.onMarkerClick}
+                        position={marker.latlng}
+                    />
+                ))}
+
+                <InfoWindow
+                    marker={this.state.activeMarker}
+                    onClose={this.onInfoWindowClose}
+                    visible={this.state.showingInfoWindow}>
+                    <div>
+                        <h1>{this.state.selectedPlace.name}</h1>
+                    </div>
+                </InfoWindow>
+
+            </Map>
         );
     }
 }
 
-export default Map;
+export default MapContainer;

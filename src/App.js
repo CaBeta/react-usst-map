@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { GoogleApiWrapper } from 'google-maps-react';
 import './App.css';
-import Map from './Map'
+import MapContainer from './Map'
 import List from './List'
 import Filter from './Filter'
 
@@ -45,18 +46,24 @@ class App extends Component {
     }
   }
   render() {
+    const filteredLocation = this.state.location.filter((item) => this.state.block === '' || item.block === this.state.block)
+      .filter((item) => this.state.type === '' || item.type === this.state.type);
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Welcome to USST</h1>
         </header>
-        <Map/>
+        <div id="map-container">
+          <MapContainer google={this.props.google} markers={filteredLocation}/>
+        </div>
         <Filter changeBlock={this.onChangeBlock} changeType={this.onChangeType}/>
-        <List location={this.state.location.filter((item)=>this.state.block === '' || item.block === this.state.block)
-          .filter((item) => this.state.type === '' || item.type === this.state.type)}/>
+        <List location={filteredLocation}/>
       </div>
     );
   }
 }
 
-export default App;
+export default GoogleApiWrapper({
+  apiKey:"AIzaSyAWfi3_GUqAYyGpn2OlJf9Nd9njHHLfdOo",
+  language:"zh-cn"
+})(App);
