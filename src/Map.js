@@ -1,5 +1,5 @@
 import React from 'react'
-import { Map, InfoWindow, Marker } from 'google-maps-react';
+import { Map, Marker } from 'google-maps-react';
 import './Map.css';
 
 class MapContainer extends React.Component {
@@ -9,25 +9,24 @@ class MapContainer extends React.Component {
         showingInfoWindow: false
     };
 
-    onMarkerClick = (props, marker) =>
-        this.setState({
-            activeMarker: marker,
-            selectedPlace: props,
-            showingInfoWindow: true
-        });
+    // onMarkerClick = (props, marker) =>
+    //     this.setState({
+    //         activeMarker: marker,
+    //         selectedPlace: props,
+    //         showingInfoWindow: true
+    //     });
 
-    onInfoWindowClose = () =>
-        this.setState({
-            activeMarker: null,
-            showingInfoWindow: false
-        });
+    // onInfoWindowClose = () =>
+    //     this.setState({
+    //         activeMarker: null,
+    //         showingInfoWindow: false
+    //     });
 
     render(){
         return(
             <Map
                 className="map"
                 google={this.props.google}
-                onClick={this.onMapClicked}
                 style={{ height: 400, position: 'relative', width: '100%' }}
                 initialCenter={{
                     lat: 31.2926931712,
@@ -36,20 +35,21 @@ class MapContainer extends React.Component {
                 zoom={15}>
                 {this.props.markers.map((marker)=>(
                     <Marker
+                        key={marker.name}
                         name={marker.name}
-                        onClick={this.onMarkerClick}
+                        onClick={this.props.onMarkerClick}
                         position={marker.latlng}
                     />
                 ))}
 
-                <InfoWindow
+                {/* <InfoWindow
                     marker={this.state.activeMarker}
                     onClose={this.onInfoWindowClose}
                     visible={this.state.showingInfoWindow}>
                     <div>
                         <h1>{this.state.selectedPlace.name}</h1>
                     </div>
-                </InfoWindow>
+                </InfoWindow> */}
 
             </Map>
         );

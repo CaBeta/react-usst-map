@@ -5,7 +5,7 @@
             "name": "一食堂",
             "block": "north",
             "photograph": {
-                "highLevel": "1.jpg",
+                "highLevel": "http://wx4.sinaimg.cn/mw1024/0060lm7Tly1fsl5zg5flbj31400u043f.jpg",
                 "lowLevel": "1-400_mobile.jpg"
             },
             "latlng": {
@@ -16,16 +16,16 @@
             "operating_hours": "早上6点到晚上6点，周六不开",
             "reviews": [
                 {
-                    "name": "Steve",
-                    "date": "October 26, 2016",
+                    "name": "不愿意透露姓名的陈先生",
+                    "date": "October 26, 2017",
                     "rating": 4,
-                    "comments": "Mission Chinese Food has grown up from its scrappy Orchard Street days into a big, two story restaurant equipped with a pizza oven, a prime rib cart, and a much broader menu. Yes, it still has all the hits — the kung pao pastrami, the thrice cooked bacon —but chef/proprietor Danny Bowien and executive chef Angela Dimayuga have also added a raw bar, two generous family-style set menus, and showstoppers like duck baked in clay. And you can still get a lot of food without breaking the bank."
+                    "comments": "一食堂大三的时候几乎每天都吃，快吃吐了。一开始在一楼吃，后来又去二楼，二楼的面也吃了很多遍。"
                 },
                 {
-                    "name": "Morgan",
-                    "date": "October 26, 2016",
+                    "name": "我乃一口巴西",
+                    "date": "October 15, 2017",
                     "rating": 4,
-                    "comments": "This place is a blast. Must orders: GREEN TEA NOODS, sounds gross (to me at least) but these were incredible!, Kung pao pastrami (but you already knew that), beef tartare was a fun appetizer that we decided to try, the spicy ma po tofu SUPER spicy but delicous, egg rolls and scallion pancake i could have passed on... I wish we would have gone with a larger group, so much more I would have liked to try!"
+                    "comments": "楼下饭点的时候人挺多的，可以去楼上吃。楼上菜也比较好。"
                 }
             ]
         },
@@ -34,7 +34,7 @@
             "name": "二食堂",
             "block": "north",
             "photograph": {
-                "highLevel": "2.jpg",
+                "highLevel": "http://wx1.sinaimg.cn/mw1024/0060lm7Tly1fsl5zlv7fxj31400u0n47.jpg",
                 "lowLevel": "2-400_mobile.jpg"
             },
             "latlng": {
@@ -45,16 +45,16 @@
             "operating_hours": "早上6点到晚上6点，周日不开",
             "reviews": [
                 {
-                    "name": "Steph",
+                    "name": "胖虎",
                     "date": "October 26, 2016",
                     "rating": 4,
-                    "comments": "Five star food, two star atmosphere. I would definitely get takeout from this place - but dont think I have the energy to deal with the hipster ridiculousness again. By the time we left the wait was two hours long."
+                    "comments": "平时下课会过来吃 味道还行 反正随便凑合"
                 },
                 {
-                    "name": "Steve",
+                    "name": "小夫",
                     "date": "October 26, 2016",
                     "rating": 4,
-                    "comments": "This cozy Clinton Hill restaurant excels at both straightforward and unusual wood-fired pizzas. If you want a taste of the latter, consider ordering the Emily, which is topped with mozzarella, pistachios, truffled sottocenere cheese, and honey. The menu includes salads and a handful of starters, as well as a burger that some meat connoisseurs consider to be among the best in the city."
+                    "comments": "现在二楼改了 晚上6点半后营业 还有小龙虾哦"
                 }
             ]
         },
@@ -63,7 +63,7 @@
             "name": "五食堂",
             "block": "north",
             "photograph": {
-                "highLevel": "3.jpg",
+                "highLevel": "http://wx3.sinaimg.cn/mw1024/0060lm7Tly1fsl5zk1v1fj31400u0105.jpg",
                 "lowLevel": "3-400_mobile.jpg"
             },
             "latlng": {
@@ -74,16 +74,16 @@
             "operating_hours":"早上6点到晚上6点，每天都开",
             "reviews": [
                 {
-                    "name": "Steve",
+                    "name": "不服你打我啊",
                     "date": "October 26, 2016",
                     "rating": 4,
-                    "comments": "The tables at this 32nd Street favorite are outfitted with grills for cooking short ribs, brisket, beef tongue, rib eye, and pork jowl. The banchan plates are uniformly good, and Deuki Hong’s menu also includes winning dishes like stir-fried squid noodles, kimchi stew, and seafood pancakes. If it’s available, make sure to order the kimchi and rice “lunchbox.” Baekjeong is a great place for large groups and birthday parties."
+                    "comments": "楼上的比较可以 各色小吃来一发 晚上香锅走起"
                 },
                 {
                     "name": "ZS",
                     "date": "October 26, 2016",
                     "rating": 5,
-                    "comments": "I've been to Korea before and many other Korean BBQ places. We had the regular pork belly and a beef (forgot which cut) and a seafood tofu soup. Two meat and a soup was just prefect for the two of us. We could have done one meat and one soup. The portions of the meat are great! The beef was juicy, tender and so good. The sides were excellent. "
+                    "comments": "下面一楼很大 因为比较远来的人也不是很多 还是比较舒服的 还可以吃馄饨"
                 }
             ]
         },
@@ -92,7 +92,7 @@
             "name": "六食堂",
             "block": "south",
             "photograph": {
-                "highLevel": "4.jpg",
+                "highLevel": "http://wx2.sinaimg.cn/mw1024/0060lm7Tly1fsl5zenzyaj31400u0grs.jpg",
                 "lowLevel": "4-400_mobile.jpg"
             },
             "latlng": {
@@ -103,16 +103,16 @@
             "operating_hours": "早上6点到晚上6点，每天都开",
             "reviews": [
                 {
-                    "name": "Steve",
+                    "name": "小李",
                     "date": "October 26, 2016",
                     "rating": 5,
-                    "comments": "In 127 years, little has changed at Katz's. It remains one of New York's — and the country's — essential Jewish delicatessens. Every inch of the massive Lower East Side space smells intensely of pastrami and rye loaves. The sandwiches are massive, so they are best when shared. Order at the counter, and don't forget to tip your slicer — your sandwich will be better for it."
+                    "comments": "上完英语课会去吃 旁边的小六也很不错 力推 里面还有一个清真食堂 不过个人感觉一般"
                 },
                 {
                     "name": "Allen",
                     "date": "October 26, 2016",
                     "rating": 5,
-                    "comments": "If I lived in NY and got diabetes from eating here every single time I ate, I would do it over and over and over again just for that first bite. These guys know how to make a sandwich. The heart attack comes free of charge! Came by while I was visiting NYC. First pit-stop when I come back :)!"
+                    "comments": "据说二楼也有 不过我没去过"
                 }
             ]
         },
@@ -121,7 +121,7 @@
             "name": "综合楼",
             "block": "north",
             "photograph": {
-                "highLevel": "5.jpg",
+                "highLevel": "http://wx2.sinaimg.cn/mw1024/0060lm7Tly1fsl5zm4bpzj31400u0qax.jpg",
                 "lowLevel": "5-400_mobile.jpg"
             },
             "latlng": {
@@ -135,13 +135,13 @@
                     "name": "Steve",
                     "date": "October 26, 2016",
                     "rating": 4,
-                    "comments": "Roberta's is the epicenter of the modern Brooklyn food scene.The pizzas are fantastic, but the restaurant really flexes its muscles with the vegetable dishes. In addition to the pies, consider ordering the radishes, the romaine salad, the roasted beets, and some of the charcuterie."
+                    "comments": "反正天天在这上课 一天到晚都去这"
                 },
                 {
                     "name": "Raymond",
                     "date": "October 26, 2016",
                     "rating": 4,
-                    "comments": "Roberta's, one of the better pizzas I have had in my life. Very trendy and hipsterish spot. Came here for lunch on a random weekday afternoon and when we arrived, there was a line forming already. The space is a bit cramped. You'll get to know your neighbors soon enough. The pizza is just delightful and delicious. It's a ncie plus that you get to see them firing up the pizzas in the corner. The major issue with Roberta's is the trek out to the Williamsburg/Bushwick."
+                    "comments": "这是学校里最大的教学区域了吧"
                 }
             ]
         },
@@ -150,7 +150,7 @@
             "name": "一教",
             "block": "north",
             "photograph": {
-                "highLevel": "6.jpg",
+                "highLevel": "http://wx4.sinaimg.cn/mw1024/0060lm7Tly1fsl5zlo4baj31400u0gsi.jpg",
                 "lowLevel": "6-400_mobile.jpg"
             },
             "latlng": {
@@ -161,16 +161,16 @@
             "operating_hours": "早上7点到晚上10点，每天都开",
             "reviews": [
                 {
-                    "name": "Steve",
+                    "name": "非酋",
                     "date": "October 26, 2016",
                     "rating": 4,
-                    "comments": "Barbecue aficionados agree that Billy Durney is cooking up some of the best Texas-style barbecue in the city. Straightforward classics like smoked brisket and baby back ribs are always a strong choice, but there are also options like pork belly tacos and a lamb belly banh mi. The space is sprawling in a way that feels like the real deal, and Durney himself can usually be found working the room, and keeping a watchful eye on the smoking meats. It's counter service only, and there's often a line, but for the scene and certainly for the meat, it's easily worth the trip to Red Hook."
+                    "comments": "篮球场旁边 看起来比较老旧的那一栋"
                 },
                 {
-                    "name": "Michelle",
+                    "name": "欧皇",
                     "date": "October 26, 2016",
                     "rating": 4,
-                    "comments": "Overall, a great try of New York BBQ. The restaurant décor is rustic with a good amount of seats to sit and enjoy the meal. I definitely would love to come back and try that monster of a beef rib!"
+                    "comments": "旁边有毛像 还有篮球场"
                 }
             ]
         },
@@ -179,7 +179,7 @@
             "name": "三教",
             "block": "north",
             "photograph": {
-                "highLevel": "7.jpg",
+                "highLevel": "http://wx2.sinaimg.cn/mw1024/0060lm7Tly1fsl5zm38vcj31400u07ay.jpg",
                 "lowLevel": "7-400_mobile.jpg"
             },
             "latlng": {
@@ -193,13 +193,13 @@
                     "name": "Steve",
                     "date": "October 26, 2016",
                     "rating": 4,
-                    "comments": "Brooks Headley’s tiny East Village cafe is so much more than a veggie burger spot — it's one of the best bang-for-your-buck restaurants in Lower Manhattan. Headley and his crew turn seasonal vegetables into delectable salads and riffs on American comfort food favorites. The specials menu changes daily, and the rest of the menu is constantly evolving. You can get a lot of food to eat here for under $15 per person."
+                    "comments": "后面是图书馆"
                 },
                 {
                     "name": "Gabriel",
                     "date": "October 26, 2016",
                     "rating": 5,
-                    "comments": "I was turned on to this place following the glowing NYT review. Its near my area of the city so I figured why not go? Man they weren't kidding, Superiority Burger is probably the best vegetarian experience I've ever had!"
+                    "comments": "晚上也开着 可以自习"
                 }
             ]
         },
@@ -208,7 +208,7 @@
             "name": "四教",
             "block": "south",
             "photograph": {
-                "highLevel": "8.jpg",
+                "highLevel": "http://wx1.sinaimg.cn/mw1024/0060lm7Tly1fsl5zgaoovj31400u00z6.jpg",
                 "lowLevel": "8-400_mobile.jpg"
             },
             "latlng": {
@@ -222,13 +222,13 @@
                     "name": "Steve",
                     "date": "October 26, 2016",
                     "rating": 4,
-                    "comments": "Over the last five years, The Dutch has turned into the quintessential American restaurant that chef Andrew Carmellini and partners Josh Pickard and Luke Ostrom sought to evoke when it first opened. It’s a great choice when you’re craving a steak, a burger, or oysters, and the menu always includes plentiful seafood options as well as pastas. The Dutch is now an indelible part of the Soho landscape."
+                    "comments": "反正就在这上英语课"
                 },
                 {
                     "name": "Loren",
                     "date": "October 26, 2016",
                     "rating": 4,
-                    "comments": "I randomly came here on a Saturday night. I was pleasantly surprised with the food and the service. We had the calamari and the ceviche with avocado, and then the catfish. Oh! Then we had the banana soufflé for dessert with ice cream. It was all delicious and well put together. Would love to eat here again."
+                    "comments": "每次来上课都要跑老远"
                 }
             ]
         }

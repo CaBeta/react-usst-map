@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import { Route, Link, Switch } from 'react-router-dom'
 import { GoogleApiWrapper } from 'google-maps-react';
 import './App.css';
+import Home from './Home';
+import Location from './Location';
 import MapContainer from './Map'
-import List from './List'
-import Filter from './Filter'
 
 class App extends Component {
   state = {
-    defaultLocation:[],
     location:[],
     block:'',
     type:''
@@ -17,7 +17,6 @@ class App extends Component {
       return response.json();
     }).then((data)=>{
       this.setState({
-        defaultLocation:data.location,
         location:data.location
       });
     })
@@ -25,7 +24,7 @@ class App extends Component {
       console.log(error);
     })
   }
-  onChangeBlock= (block) => {
+  onChangeBlock = (block) => {
     this.setState({
       block:block
     })
@@ -35,7 +34,7 @@ class App extends Component {
       })
     }
   }
-  onChangeType= (type) => {
+  onChangeType = (type) => {
     this.setState({
       type:type
     })
@@ -45,19 +44,35 @@ class App extends Component {
       })
     }
   }
+  onMarkerClick = () =>{
+    console.log("click")
+  }
   render() {
     const filteredLocation = this.state.location.filter((item) => this.state.block === '' || item.block === this.state.block)
       .filter((item) => this.state.type === '' || item.type === this.state.type);
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Welcome to USST</h1>
+          <Link to="/"><h1 className="App-title">Welcome to USST</h1></Link>
         </header>
         <div id="map-container">
-          <MapContainer google={this.props.google} markers={filteredLocation}/>
+          <MapContainer google={this.props.google} markers={filteredLocation} onMarkerClick={this.onMarkerClick} />
         </div>
-        <Filter changeBlock={this.onChangeBlock} changeType={this.onChangeType}/>
-        <List location={filteredLocation}/>
+        <Switch>
+          <Route exact path='/' render={() => (
+            <Home
+              location={filteredLocation}
+              changeBlock={this.onChangeBlock}
+              changeType={this.onChangeType}
+            />
+          )} />
+          <Route path='/:number' render={({match}) => (
+            <Location
+              match={match}
+              location={filteredLocation}
+            />
+          )} />
+        </Switch>
       </div>
     );
   }

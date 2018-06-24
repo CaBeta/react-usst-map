@@ -1,0 +1,62 @@
+/* -webkit-font-smoothing:antialiased; */
+    /* text-rendering: optimizeLegibility; */
+#detail-main{
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#detail-location p{
+    margin-bottom: 20px;
+}
+#detail-location img{
+    max-width: 100%;
+    margin:0 auto;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    /* vertical-align: middle; */
+}
+.review-detail{
+    border-bottom:1px solid #e5e9ef;
+}
+#name{
+    color:#6d757a;
+    line-height: 18px;
+    font-weight: 600;
+}
+#comments{
+    padding: 2px 0;
+}
+#date{
+    color: #99a2aa;
+    line-height: 26px;
+    font-size:12px;
+}
+
+
+/* ipad width是768 */
+@media (max-width: 767px){
+    #detail-main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #detail-location,#detail-review{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .location-img{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+@media (min-width: 768px){
+    #detail-main{
+        width:700px;
+    }
+}

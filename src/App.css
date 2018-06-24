@@ -9,6 +9,7 @@
 
 .App-header {
   background-color: #4da;
+  text-align: center;
   padding: 1px;
   color: white;
   position:fixed;
@@ -16,6 +17,9 @@
   top: 0px;
   z-index:1;
   box-shadow: 0 0px 11px rgba(0,0,0,0.4)
+}
+.App-header h1 {
+  color: aliceblue;
 }
 
 .App-title {
@@ -25,7 +29,10 @@
 .App-intro {
   font-size: large;
 }
-
+a {
+  text-decoration: none;
+  color: #000;
+}
 #map-container {
   position: relative;
   height: 400px;
