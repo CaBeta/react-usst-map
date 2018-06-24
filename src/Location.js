@@ -13,6 +13,7 @@ class Location extends React.Component {
     }
     render(){
         return(
+            this.state.loc? (
             <div id="detail-main">
                 <div id="detail-location">
                     <h2>{this.state.loc.name}</h2>
@@ -31,7 +32,7 @@ class Location extends React.Component {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div>):(<div>发生了一些错误</div>)
         )
     }
 }
