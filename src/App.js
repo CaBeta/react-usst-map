@@ -53,6 +53,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <Route path='/:number' render={() => (
+            <Link to="/" className="back"/>
+          )} />
           <Link to="/"><h1 className="App-title">Welcome to USST</h1></Link>
         </header>
         <div id="map-container">
