@@ -20,8 +20,7 @@ class App extends Component {
       this.setState({
         location:data.location
       });
-    })
-    .catch((error)=>{
+    }).catch((error)=>{
       console.log(error);
     })
   }

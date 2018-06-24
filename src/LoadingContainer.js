@@ -5,11 +5,14 @@ class LoadingContainer extends Component {
         warn:''
     }
     componentDidMount(){
-        setTimeout(() => {
+        this.warning = setTimeout(() => {
             this.setState({
                 warn:'如果一直是这样 emmmm 那么可能你没有科学上网，请检查一下'
             })
         }, 3000);
+    }
+    componentWillUnmount(){
+        clearTimeout(this.warning)
     }
     render(){
         return(
