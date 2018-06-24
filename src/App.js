@@ -4,6 +4,7 @@ import { GoogleApiWrapper } from 'google-maps-react';
 import './App.css';
 import Home from './Home';
 import Location from './Location';
+import LoadingContainer from './LoadingContainer'
 import MapContainer from './Map'
 
 class App extends Component {
@@ -45,7 +46,6 @@ class App extends Component {
     }
   }
   onMarkerClick = () =>{
-    console.log("click")
   }
   render() {
     const filteredLocation = this.state.location.filter((item) => this.state.block === '' || item.block === this.state.block)
@@ -83,5 +83,6 @@ class App extends Component {
 
 export default GoogleApiWrapper({
   apiKey:"AIzaSyAWfi3_GUqAYyGpn2OlJf9Nd9njHHLfdOo",
-  language:"zh-cn"
+  language:"zh-cn",
+  LoadingContainer: LoadingContainer
 })(App);
