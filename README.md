@@ -11,6 +11,9 @@ $ npm start
 ```
 打开浏览器访问`localhost:3000`可以就看到这个应用啦
 
+# 第三方API
+使用了[百度地图](https://lbsyun.baidu.com/)地理逆编码Web API
+
 # 参考
 参考了[google-maps-react](https://github.com/fullstackreact/google-maps-react)
 
