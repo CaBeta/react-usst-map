@@ -10,6 +10,10 @@
     padding-right: 15px;
     padding-left: 15px;
 }
+.geocoder{
+    color: #6d757a;
+    font-size:15px;
+}
 #detail-location p{
     margin-bottom: 20px;
 }

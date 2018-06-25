@@ -1,14 +1,34 @@
 import React from 'react';
+import fetchJsonp from 'fetch-jsonp';
 import './Location.css';
+
+function Geocoder(props){
+    return <p className="geocoder">{props.address}</p>
+}
 
 class Location extends React.Component {
     state={
-        loc:{}
+        loc:{},
+        geocoder:{}
     }
     componentWillMount=()=>{
         this.setState({
             // eslint-disable-next-line
             loc: this.props.location.filter((item) => item.id == this.props.match.params.number)[0]
+        })
+    }
+    componentDidMount() {
+        if (!this.state.loc){return;}
+        const latlng = this.state.loc.latlng;
+        fetchJsonp(`http://api.map.baidu.com/geocoder/v2/?location=${latlng.lat},${latlng.lng}&output=json&ak=u26WKmbPmhsjNL2mDC2LWKyr9gX88GEv`, {
+            headers: { Accept: 'application/json', },
+            jsonpCallback: 'callback'
+        }).then((response) => {
+            return response.json();
+        }).then((data) => {
+            this.setState({ geocoder: data.result })
+        }).catch((error) => {
+            console.log(error);
         })
     }
     render(){
@@ -17,6 +37,7 @@ class Location extends React.Component {
             <div id="detail-main">
                 <div id="detail-location">
                     <h2>{this.state.loc.name}</h2>
+                    <Geocoder address={this.state.geocoder.formatted_address}/>
                     <div className="location-img">
                         <img src={this.state.loc.photograph.highLevel} alt={this.state.loc.name}/>
                     </div>

@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom'
 import './List.css';
 
 class List extends React.Component {
-    state={
-
-    }
     render(){
         return(
             <div id="location-list">
