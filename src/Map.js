@@ -1,5 +1,6 @@
 import React from 'react'
 import { Map, Marker } from 'google-maps-react';
+import { withRouter } from "react-router-dom";
 import './Map.css';
 
 class MapContainer extends React.Component {
@@ -9,12 +10,17 @@ class MapContainer extends React.Component {
         showingInfoWindow: false
     };
 
-    // onMarkerClick = (props, marker) =>
-    //     this.setState({
-    //         activeMarker: marker,
-    //         selectedPlace: props,
-    //         showingInfoWindow: true
-    //     });
+    onMarkerClick = (id) =>
+        // this.setState({
+        //     activeMarker: marker,
+        //     selectedPlace: props,
+        //     showingInfoWindow: true
+        // });
+        {
+            if(this.props.history.location.pathname === "/"){
+                this.props.history.push("/"+id);
+            }
+        }
 
     // onInfoWindowClose = () =>
     //     this.setState({
@@ -37,7 +43,7 @@ class MapContainer extends React.Component {
                     <Marker
                         key={marker.name}
                         name={marker.name}
-                        onClick={this.props.onMarkerClick}
+                        onClick={()=>this.onMarkerClick(marker.id)}
                         position={marker.latlng}
                     />
                 ))}
@@ -56,4 +62,4 @@ class MapContainer extends React.Component {
     }
 }
 
-export default MapContainer;
+export default withRouter(MapContainer);
