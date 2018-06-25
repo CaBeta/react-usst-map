@@ -6,7 +6,12 @@ class Home extends React.Component {
     render(){
         return(
             <div>
-                <Filter changeBlock={this.props.changeBlock} changeType={this.props.changeType}/>
+                <Filter
+                    block={this.props.block}
+                    type={this.props.type}
+                    changeBlock={this.props.changeBlock}
+                    changeType={this.props.changeType}
+                />
                 <List location={this.props.location}/>
             </div>
         )

@@ -63,6 +63,8 @@ class App extends Component {
         <Switch>
           <Route exact path='/' render={() => (
             <Home
+              block={this.state.block}
+              type={this.state.type}
               location={filteredLocation}
               changeBlock={this.onChangeBlock}
               changeType={this.onChangeType}
