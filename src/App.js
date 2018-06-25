@@ -59,7 +59,7 @@ class App extends Component {
           )} />
           <Link to="/"><h1 className="App-title">Welcome to USST</h1></Link>
         </header>
-        <div id="map-container">
+        <div id="map-container" role="application">
           <MapContainer markers={filteredLocation} onMarkerClick={this.onMarkerClick} />
         </div>
         <Switch>
