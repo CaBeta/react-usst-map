@@ -47,6 +47,8 @@ class App extends Component {
   onMarkerClick = () =>{
   }
   render() {
+    // 通过下拉栏对地点进行筛选
+    // 如果block和type为空字符串则保留所有的地点 否则按照相应的block和type进行筛选
     const filteredLocation = this.state.location.filter((item) => this.state.block === '' || item.block === this.state.block)
       .filter((item) => this.state.type === '' || item.type === this.state.type);
     return (

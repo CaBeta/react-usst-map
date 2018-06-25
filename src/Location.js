@@ -20,6 +20,8 @@ class Location extends React.Component {
     componentDidMount() {
         if (!this.state.loc){return;}
         const latlng = this.state.loc.latlng;
+
+        // 传入该地点经纬度 异步获取百度地图地理逆编码数据
         fetchJsonp(`http://api.map.baidu.com/geocoder/v2/?location=${latlng.lat},${latlng.lng}&output=json&ak=u26WKmbPmhsjNL2mDC2LWKyr9gX88GEv`, {
             headers: { Accept: 'application/json', },
             jsonpCallback: 'callback'
