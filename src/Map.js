@@ -1,6 +1,8 @@
 import React from 'react'
 import { Map, Marker } from 'google-maps-react';
 import { withRouter } from "react-router-dom";
+import { GoogleApiWrapper } from 'google-maps-react';
+import LoadingContainer from './LoadingContainer'
 import './Map.css';
 
 class MapContainer extends React.Component {
@@ -62,4 +64,8 @@ class MapContainer extends React.Component {
     }
 }
 
-export default withRouter(MapContainer);
+export default GoogleApiWrapper({
+    apiKey: "AIzaSyAWfi3_GUqAYyGpn2OlJf9Nd9njHHLfdOo",
+    language: "zh-cn",
+    LoadingContainer: LoadingContainer
+})(withRouter(MapContainer));
