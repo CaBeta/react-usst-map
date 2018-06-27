@@ -1,7 +1,6 @@
 import React from 'react'
-import { Map, Marker } from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import { withRouter } from "react-router-dom";
-import { GoogleApiWrapper } from 'google-maps-react';
 import LoadingContainer from './LoadingContainer'
 import './Map.css';
 

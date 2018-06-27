@@ -2,20 +2,19 @@ import React from 'react';
 import List from './List'
 import Filter from './Filter'
 
-class Home extends React.Component {
-    render(){
-        return(
-            <div>
-                <Filter
-                    block={this.props.block}
-                    type={this.props.type}
-                    changeBlock={this.props.changeBlock}
-                    changeType={this.props.changeType}
-                />
-                <List location={this.props.location}/>
-            </div>
-        )
-    }
+function Home(props){
+    return(
+        <React.Fragment>
+            <Filter
+                block={props.block}
+                type={props.type}
+                changeBlock={props.changeBlock}
+                changeType={props.changeType}
+            />
+            <List location={props.location}/>
+        </React.Fragment>
+    )
 }
+
 
 export default Home
